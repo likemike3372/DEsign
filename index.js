@@ -47,7 +47,8 @@ app.use(flash());
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 
-mongoose.connect('mongodb://localhost:27017/yelp_camp_v3', { useNewUrlParser: true });
+mongoose.connect('mongodb://Mikhael:likemike3372@ds211558.mlab.com:11558/design', { useNewUrlParser: true });
+mongodb://Mikhael:likemike3372@ds211558.mlab.com:11558/design mongodb://localhost:27017/yelp_camp_v3
 app.use(function(req, res, next){
     res.locals.currentUser = req.user;
     res.locals.error=req.flash("error");
